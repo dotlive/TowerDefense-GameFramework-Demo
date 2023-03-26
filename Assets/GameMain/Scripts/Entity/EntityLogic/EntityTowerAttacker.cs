@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityGameFramework.Runtime;
-using Flower.Data;
+﻿using UnityGameFramework.Runtime;
 
 namespace Flower
 {
@@ -82,4 +78,3 @@ namespace Flower
         }
     }
 }
-

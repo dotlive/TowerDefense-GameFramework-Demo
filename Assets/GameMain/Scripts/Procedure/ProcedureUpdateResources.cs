@@ -12,7 +12,6 @@ namespace Flower
     {
         private bool m_UpdateResourcesComplete = false;
         private int m_UpdateCount = 0;
-        private long m_UpdateTotalZipLength = 0L;
         private int m_UpdateSuccessCount = 0;
         private List<UpdateLengthData> m_UpdateLengthData = new List<UpdateLengthData>();
         private UIUpdateResourceForm m_UpdateResourceForm = null;

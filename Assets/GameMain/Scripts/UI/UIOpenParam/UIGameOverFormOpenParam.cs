@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using GameFramework;
+﻿using GameFramework;
 using Flower.Data;
 
 namespace Flower

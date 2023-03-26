@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Flower.Data;
 using UnityGameFramework.Runtime;
-using System;
 using GameFramework.Fsm;
 using GameFramework;
 

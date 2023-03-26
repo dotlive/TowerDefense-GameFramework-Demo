@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using GameFramework.Data;
-using GameFramework.DataTable;
+﻿using GameFramework.DataTable;
 
 namespace Flower.Data
 {

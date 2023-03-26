@@ -1,10 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using GameFramework.Data;
-using GameFramework.DataTable;
-
-namespace Flower.Data
+﻿namespace Flower.Data
 {
     public class ProjectileData
     {
@@ -49,4 +43,3 @@ namespace Flower.Data
     }
 
 }
-

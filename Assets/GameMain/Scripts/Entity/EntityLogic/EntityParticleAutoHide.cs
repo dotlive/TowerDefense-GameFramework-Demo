@@ -1,9 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityGameFramework.Runtime;
-
-namespace Flower
+﻿namespace Flower
 {
     public class EntityParticleAutoHide : EntityParticle
     {
@@ -46,4 +41,3 @@ namespace Flower
         }
     }
 }
-

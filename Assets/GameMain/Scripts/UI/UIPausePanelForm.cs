@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityGameFramework.Runtime;
-using GameFramework.Event;
+﻿using UnityGameFramework.Runtime;
 using UnityEngine.UI;
 using Flower.Data;
 

@@ -1,10 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityGameFramework.Runtime;
-using System;
-using GameFramework.Event;
 using Flower.Data;
 
 namespace Flower

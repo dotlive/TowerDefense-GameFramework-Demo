@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using GameFramework.DataTable;
-using GameFramework.Event;
+﻿using GameFramework.Event;
 using GameFramework.Procedure;
 using System;
 using UnityGameFramework.Runtime;

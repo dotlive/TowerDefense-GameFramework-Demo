@@ -4,7 +4,6 @@ using UnityEngine;
 using GameFramework;
 using GameFramework.Fsm;
 using ProcedureOwner = GameFramework.Fsm.IFsm<Flower.EntityEnemy>;
-using UnityEngine.AI;
 using UnityGameFramework.Runtime;
 
 namespace Flower
@@ -98,4 +97,3 @@ namespace Flower
         }
     }
 }
-

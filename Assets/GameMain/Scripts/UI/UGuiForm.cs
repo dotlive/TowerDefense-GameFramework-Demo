@@ -10,9 +10,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
-using GameFramework.Event;
-using System;
-using GameFramework;
 
 namespace Flower
 {

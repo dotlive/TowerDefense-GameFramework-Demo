@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Flower.Data;
 
 namespace Flower
@@ -60,4 +58,3 @@ namespace Flower
         }
     }
 }
-

@@ -6,7 +6,6 @@
 //------------------------------------------------------------
 
 using GameFramework;
-using GameFramework.DataTable;
 using GameFramework.Sound;
 using UnityGameFramework.Runtime;
 using Flower.Data;

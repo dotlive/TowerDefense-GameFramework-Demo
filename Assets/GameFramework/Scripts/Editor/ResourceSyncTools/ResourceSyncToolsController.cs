@@ -26,16 +26,16 @@ namespace UnityGameFramework.Editor.ResourceTools
 
         public event GameFrameworkAction<int, int, string> OnResourceDataChanged = null;
 
-        public string[] GetAllAssetBundleNames()
-        {
-            return AssetDatabase.GetAllAssetBundleNames();
-        }
-
         public string[] GetUsedAssetBundleNames()
         {
             HashSet<string> hashSet = new HashSet<string>(GetAllAssetBundleNames());
             hashSet.ExceptWith(GetUnusedAssetBundleNames());
             return hashSet.ToArray();
+        }
+
+        public string[] GetAllAssetBundleNames()
+        {
+            return AssetDatabase.GetAllAssetBundleNames();
         }
 
         public string[] GetUnusedAssetBundleNames()

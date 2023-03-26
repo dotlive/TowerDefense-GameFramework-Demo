@@ -430,13 +430,13 @@ namespace UnityGameFramework.Editor.ResourceTools
         {
             if (!IsValidResourceName(name, variant))
             {
-                return new Asset[0];
+                return Array.Empty<Asset>();
             }
 
             Resource resource = GetResource(name, variant);
             if (resource == null)
             {
-                return new Asset[0];
+                return Array.Empty<Asset>();
             }
 
             return resource.GetAssets();

@@ -1,7 +1,4 @@
-﻿using System;
-using UnityEngine;
-using GameFramework;
-using Flower.Data;
+﻿using GameFramework;
 
 namespace Flower
 {

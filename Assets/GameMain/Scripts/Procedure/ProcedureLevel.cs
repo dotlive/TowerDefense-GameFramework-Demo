@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using GameFramework.Localization;
-using GameFramework.Event;
+﻿using GameFramework.Event;
 using UnityGameFramework.Runtime;
 using GameFramework.Procedure;
 using GameFramework;

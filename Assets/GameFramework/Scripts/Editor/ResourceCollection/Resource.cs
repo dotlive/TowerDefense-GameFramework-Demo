@@ -5,6 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using System;
 using GameFramework;
 using System.Collections.Generic;
 
@@ -90,7 +91,7 @@ namespace UnityGameFramework.Editor.ResourceTools
 
         public static Resource Create(string name, string variant, string fileSystem, LoadType loadType, bool packed, string[] resourceGroups)
         {
-            return new Resource(name, variant, fileSystem, loadType, packed, resourceGroups ?? new string[0]);
+            return new Resource(name, variant, fileSystem, loadType, packed, resourceGroups ?? Array.Empty<string>());
         }
 
         public Asset[] GetAssets()

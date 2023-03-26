@@ -1,9 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using GameFramework.Procedure;
-using UnityEngine;
+﻿using GameFramework.Procedure;
 using UnityGameFramework.Runtime;
-using GameFramework.Resource;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
 namespace Flower

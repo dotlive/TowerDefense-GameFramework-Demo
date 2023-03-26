@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using GameFramework.Localization;
+﻿using GameFramework.Localization;
 using GameFramework.Procedure;
-using UnityEngine;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
@@ -50,7 +47,6 @@ namespace Flower
         {
             base.OnDestroy(procedureOwner);
         }
-
 
         private void InitLanguageSettings()
         {
@@ -113,4 +109,3 @@ namespace Flower
         }
     }
 }
-

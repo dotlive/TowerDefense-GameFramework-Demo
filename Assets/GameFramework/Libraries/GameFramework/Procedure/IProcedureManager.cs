@@ -51,6 +51,12 @@ namespace GameFramework.Procedure
         void StartProcedure(Type procedureType);
 
         /// <summary>
+        /// 开始流程。
+        /// </summary>
+        /// <param name="procedureBase">要开始的流程实例。</param>
+        void StartProcedure(ProcedureBase procedureBase);
+
+        /// <summary>
         /// 是否存在流程。
         /// </summary>
         /// <typeparam name="T">要检查的流程类型。</typeparam>

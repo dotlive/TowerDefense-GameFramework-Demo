@@ -5,6 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using System;
 using GameFramework;
 using GameFramework.Resource;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 using UnityGameFramework.Runtime;
+using Version = GameFramework.Version;
 
 namespace UnityGameFramework.Editor.ResourceTools
 {
@@ -19,8 +21,8 @@ namespace UnityGameFramework.Editor.ResourceTools
     {
         private const string DefaultResourcePackName = "GameFrameworkResourcePack";
         private const string DefaultExtension = "dat";
-        private static readonly string[] EmptyStringArray = new string[0];
-        private static readonly UpdatableVersionList.Resource[] EmptyResourceArray = new UpdatableVersionList.Resource[0];
+        private static readonly string[] EmptyStringArray = Array.Empty<string>();
+        private static readonly UpdatableVersionList.Resource[] EmptyResourceArray = Array.Empty<UpdatableVersionList.Resource>();
 
         private readonly UpdatableVersionListSerializer m_UpdatableVersionListSerializer;
         private readonly ResourcePackVersionListSerializer m_ResourcePackVersionListSerializer;

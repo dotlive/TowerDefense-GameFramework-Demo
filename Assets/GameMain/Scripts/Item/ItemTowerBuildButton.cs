@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityGameFramework.Runtime;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using GameFramework.Event;
 using System;

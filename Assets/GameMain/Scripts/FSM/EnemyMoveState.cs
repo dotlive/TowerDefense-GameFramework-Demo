@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using GameFramework;
 using GameFramework.Fsm;
 using ProcedureOwner = GameFramework.Fsm.IFsm<Flower.EntityEnemy>;
@@ -135,4 +133,3 @@ namespace Flower
         }
     }
 }
-

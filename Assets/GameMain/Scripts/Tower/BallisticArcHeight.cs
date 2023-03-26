@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Flower
+﻿namespace Flower
 {
     /// <summary>
     /// Ballistic arc calculation priorities/preferences.

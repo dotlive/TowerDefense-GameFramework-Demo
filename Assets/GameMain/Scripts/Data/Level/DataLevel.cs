@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using GameFramework.Data;
+﻿using System.Collections.Generic;
 using GameFramework.DataTable;
 using UnityGameFramework.Runtime;
 using GameFramework.Event;
@@ -16,7 +13,7 @@ namespace Flower.Data
 
         private int[] starScore;
 
-        private readonly static int NONE_LEVEL_INDEX = -1;
+        private static readonly int NONE_LEVEL_INDEX = -1;
 
         private EnumLevelState stateBeforePause;
 
@@ -106,7 +103,7 @@ namespace Flower.Data
             starScore[1] = GameEntry.Config.GetInt(Constant.Config.LevelStar2);
             starScore[2] = GameEntry.Config.GetInt(Constant.Config.LevelStar3);
 
-            Subscribe(LoadLevelFinishEventArgs.EventId, OnLoadLevelFinfish);
+            Subscribe(LoadLevelFinishEventArgs.EventId, OnLoadLevelFinish);
         }
 
         public LevelData GetLevelData(int id)
@@ -268,7 +265,7 @@ namespace Flower.Data
 
         public void GameSuccess()
         {
-            if (LevelState == EnumLevelState.Gameover)
+            if (LevelState == EnumLevelState.GameOver)
                 return;
 
             if (CurrentLevelIndex == NONE_LEVEL_INDEX)
@@ -300,13 +297,13 @@ namespace Flower.Data
             }
 
             SetLevelRecord(CurrentLevelIndex, starCount);
-            ChangeLevelState(EnumLevelState.Gameover);
+            ChangeLevelState(EnumLevelState.GameOver);
             GameEntry.Event.Fire(this, GameoverEventArgs.Create(EnumGameOverType.Success, starCount));
         }
 
         public void GameFail()
         {
-            if (LevelState == EnumLevelState.Gameover)
+            if (LevelState == EnumLevelState.GameOver)
                 return;
 
             if (CurrentLevelIndex == NONE_LEVEL_INDEX)
@@ -321,7 +318,7 @@ namespace Flower.Data
                 return;
             }
 
-            ChangeLevelState(EnumLevelState.Gameover);
+            ChangeLevelState(EnumLevelState.GameOver);
             GameEntry.Event.Fire(this, GameoverEventArgs.Create(EnumGameOverType.Fail, 0));
         }
 
@@ -334,7 +331,7 @@ namespace Flower.Data
             }
         }
 
-        private void OnLoadLevelFinfish(object sender, GameEventArgs e)
+        private void OnLoadLevelFinish(object sender, GameEventArgs e)
         {
             LoadLevelFinishEventArgs ne = (LoadLevelFinishEventArgs)e;
             if (ne == null)

@@ -180,7 +180,7 @@ namespace UnityGameFramework.Runtime
         /// <returns>实际读取了多少字节。</returns>
         protected override int Read(byte[] buffer, int startIndex, int length)
         {
-            byte[] result = null;
+            sbyte[] result = null;
             int bytesRead = InternalRead(length, out result);
             Array.Copy(result, 0, buffer, startIndex, bytesRead);
             return bytesRead;
@@ -243,9 +243,9 @@ namespace UnityGameFramework.Runtime
             return m_FileStream.Call<int>("read");
         }
 
-        private int InternalRead(int length, out byte[] result)
+        private int InternalRead(int length, out sbyte[] result)
         {
-            IntPtr resultPtr = AndroidJNI.NewByteArray(length);
+            IntPtr resultPtr = AndroidJNI.NewSByteArray(length);
             int offset = 0;
             int bytesLeft = length;
             while (bytesLeft > 0)
@@ -263,7 +263,7 @@ namespace UnityGameFramework.Runtime
                 bytesLeft -= bytesRead;
             }
 
-            result = AndroidJNI.FromByteArray(resultPtr);
+            result = AndroidJNI.FromSByteArray(resultPtr);
             AndroidJNI.DeleteLocalRef(resultPtr);
             return offset;
         }

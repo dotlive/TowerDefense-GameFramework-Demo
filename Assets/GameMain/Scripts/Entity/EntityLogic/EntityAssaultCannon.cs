@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Flower
+﻿namespace Flower
 {
     public class EntityAssaultCannon : EntityTowerAttacker
     {
@@ -22,4 +18,3 @@ namespace Flower
         }
     }
 }
-
